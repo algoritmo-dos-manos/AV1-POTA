@@ -1,3 +1,4 @@
+# Classe Aluno
 # matricula, nome completo, nacimento, rg, cpf.
 class Aluno():
     Matriculas = 0
