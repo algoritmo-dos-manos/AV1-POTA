@@ -1,15 +1,23 @@
 # matricula, nome completo, nacimento, rg, cpf.
 class Aluno():
-    def __init__(self, matricula, nome, data_nascimento, rg, cpf):
-        self.matricula = matricula
+    Matriculas = 0
+    
+    def __init__(self, nome, data_nascimento, nacionalidade, cpf):
+        
+        Aluno.Matriculas =+ 1 
+        
         self.nome = nome 
         self.data_nascimento = data_nascimento
-        self.rg = rg 
+        self.nacionalidade = nacionalidade 
         self.cpf = cpf
-    
-    def tete(self):
+        self.matricula = Aluno.Matriculas
+        
+
+
+    def Exibe_dados(self):
+        
         print(f'Matricula: {self.matricula}')
         print(f'Nome: {self.nome}')
         print(f'Data de Nascimento: {self.data_nascimento}')
-        print(f'RG: {self.rg}')
+        print(f'Nacionalidade: {self.nacionalidade}')
         print(f'CPF: {self.cpf}')

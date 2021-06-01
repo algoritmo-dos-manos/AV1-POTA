@@ -10,32 +10,29 @@
 #10. (0,1 décimos) Apresentar comentários identificando apenas o início dos trechos de código em que está sendo evidenciado as soluções (no caso, somente comentar o início das pesquisas: sequencial e binária).
 import modelo
 
-def menu_de_busca():
-    pass
+#funcao que cria o objeto aluno:
+def registra_aluno():
+    nome = input('Digite o nome completo do(a) Aluno(a): ').title()
+    data_nascimento = input('Digite a data de nascimento. (exp.: 99/99/9999): ')
+    cpf = input('Digite o CPF do(a) Aluno(a), somente números: ')
+    nacionalidade = input('Digite a nacionalidade: ').title()
+    
+    return modelo.Aluno(nome, data_nascimento, nacionalidade, cpf)
 
-
+#Função principal:
 def main():
-    temp_Nome = input("Insira o nome completo: ")
-    print(temp_Nome == None)
     
-    temp_Nacimento = ''
-    temp_Matricula = ''
-    temp_RG = ''
-    temp_CPF = ''
+    #Inicio de bloco de Teste:
+    v = registra_aluno()
+    print(' ')
+    d = registra_aluno()
+    print(' ')
 
-    
-
-    Igor = modelo.Aluno('0001', 'Igor Pablo da Silva Freitas', '15.03.1992', '1882322', '923.929.123-53')
-    Igor.tete()
-
-
-
-
-
-
-
-
-
+    v.tete()
+    print(' ')
+    d.tete()
+    print(' ')
+    #Fim do bloco de Teste!
 
 if __name__ == "__main__":
     main()
